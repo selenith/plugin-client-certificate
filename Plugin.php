@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\ReverseProxyLdap;
+namespace Kanboard\Plugin\ClientCertificate;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Plugin\ClientCertificate\Auth\ClientCertificateAuth;
