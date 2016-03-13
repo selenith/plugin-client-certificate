@@ -20,7 +20,7 @@ Requirements
     - Kanboard username: `SSL_CLIENT_S_DN_CN`
     - Kanboard email: `SSL_CLIENT_S_DN_Email`
 
-This Docker image is used to test and develop this plugin.
+This [Docker image is used to test and develop](https://github.com/kanboard/docker-apache-client-certificate) this plugin.
 
 Installation
 ------------
