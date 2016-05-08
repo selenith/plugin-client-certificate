@@ -34,6 +34,7 @@ class ClientCertificateUserProvider implements UserProviderInterface
      *
      * @access public
      * @param  string $username
+     * @param  string $email
      */
     public function __construct($username, $email)
     {
