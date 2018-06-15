@@ -1,7 +1,7 @@
 SSL Client Certificate Authentication for Kanboard
 ==================================================
 
-[![Build Status](https://travis-ci.org/kanboard/plugin-client-certificate.svg?branch=master)](https://travis-ci.org/kanboard/plugin-client-certificate)
+**This plugin is not maintained anymore!**
 
 Use SSL client certificate for Kanboard authentication.
 
