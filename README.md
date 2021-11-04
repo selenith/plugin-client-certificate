@@ -44,12 +44,12 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
 	
-	# Let's encrypt certificate
- 	ssl_certificate /etc/letsencrypt/live/kanboard.example.net/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/kanboard.example.net/privkey.pem;
+    # Let's encrypt certificate
+    ssl_certificate /etc/letsencrypt/live/kanboard.example.net/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/kanboard.example.net/privkey.pem;
 
-	# Personnal PKI CA public certificate. 
-	# Used for check the client certificate.  
+    # Personnal PKI CA public certificate. 
+    # Used for check the client certificate.  
     # No relationship with the let's encrypt HTTPS certificate.
     ssl_client_certificate /etc/nginx/certifs/my_certificate_authority.example.net.pem;
     ssl_verify_client optional;
