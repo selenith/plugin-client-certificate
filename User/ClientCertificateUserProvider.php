@@ -8,8 +8,9 @@ use Kanboard\Core\Security\Role;
 /**
  * SSL Client Certificate User Provider
  *
- * @package  user
- * @author   Frederic Guillot
+ * @package user
+ * @author  Frederic Guillot
+ * @author  Selenith
  */
 class ClientCertificateUserProvider implements UserProviderInterface
 {
@@ -33,13 +34,15 @@ class ClientCertificateUserProvider implements UserProviderInterface
      * Constructor
      *
      * @access public
-     * @param  string $username
-     * @param  string $email
+     * @param   string $username
+     * @param   string $email
+     * @param   string $role
      */
-    public function __construct($username, $email)
+    public function __construct($username, $email, $role)
     {
         $this->username = $username;
         $this->email = $email;
+        $this->role = $role;
     }
 
     /**
@@ -94,7 +97,7 @@ class ClientCertificateUserProvider implements UserProviderInterface
      */
     public function getRole()
     {
-        return Role::APP_USER;
+        return  $this->role;
     }
 
     /**
