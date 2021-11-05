@@ -7,7 +7,9 @@ Use SSL client certificate for Kanboard authentication with Nginx server.
 
 This Plug-in is originally created by [Frédéric Guillot](https://github.com/fguillot) for [Kanboard](https://github.com/kanboard).
 
-This fork adds the ability to authenticate a user with a certificate and with the corresponding role.
+This fork adds :
+- Nginx compatibility
+- The ability to authenticate a user with the corresponding role declared in the certificate.
 
 Author
 ------
@@ -24,8 +26,8 @@ Requirements
 - User certificate can now use the "role" field. Valid values are "admin", "manager" and "user".
   If the field is not présent or invalid, the "user" role is assigned by default.
 - This plugin use these nginx environments variables:
-    - $ssl_client_s_dn mapped to `SSL_CLIENT_S_DN`
-    - $ssl_client_verify mapped `SSL_CLIENT_VERIFY`
+    - `SSL_CLIENT_S_DN` (mapped from $ssl_client_s_dn in Nginx)
+    - `SSL_CLIENT_VERIFY` (mapped from $ssl_client_verify in Nginx)
 
 Here is a Nginx configuration example :
 ```
