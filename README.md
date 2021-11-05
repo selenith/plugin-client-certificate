@@ -87,7 +87,6 @@ server {
 }
 ```
 
-This [Docker image is used to test and develop](https://github.com/kanboard/docker-apache-client-certificate) this plugin.
 
 Installation
 ------------
@@ -96,4 +95,9 @@ Installation
 - Copy all files under this directory
 
 
-Tested and working whith debian 11, Nginx 1.18.0 and php7.4-fpm.
+Test Environment
+------------
+Tested and working whith :
+- Harwdare : raspberry pi 4
+- Software : debian 11, Nginx 1.18.0 and php7.4-fpm.
+- kanboard : version 1.2.20 with sqlite.
