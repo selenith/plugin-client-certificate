@@ -96,7 +96,7 @@ Installation
 
 Test Environment
 ------------
-Tested and working whith :
+Tested and working with :
 - Harwdare : raspberry pi 4
 - Software : debian 11, Nginx 1.18.0 and php7.4-fpm.
 - kanboard : version 1.2.20 with sqlite.
